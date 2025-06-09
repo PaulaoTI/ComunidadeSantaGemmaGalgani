@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/santagemma.jpg" type="image/x-icon">
-    <title>Liturgia - Comunidade Santa Gemma Galgani</title>
+    <title>Comunidade Santa Gemma Galgani</title>
     <style>
         .menu {
             display: flex;
@@ -43,12 +43,14 @@
             margin: 5px;
         }
 
-        .div-folhetos-1,
-        .div-folhetos-2,
-        .div-folhetos-3,
-        .div-folhetos-4,
-        .div-folhetos-5,
-        .div-folhetos-6 {
+        .folhetos-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .div-folhetos {
             height: 7vh;
             width: 330px;
             max-width: 500px;
@@ -62,24 +64,14 @@
             padding: 0 10px;
         }
 
-        .text-folhetos-1,
-        .text-folhetos-2,
-        .text-folhetos-3,
-        .text-folhetos-4,
-        .text-folhetos-5,
-        .text-folhetos-6 {
+        .text-folhetos {
             font-size: 17px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             line-height: 1.2em;
             color: black;
         }
 
-        .button-folhetos-1,
-        .button-folhetos-2,
-        .button-folhetos-3,
-        .button-folhetos-4,
-        .button-folhetos-5,
-        .button-folhetos-6 {
+        .button-folhetos {
             height: 60px;
             width: 190px;
             font-size: 1.2em;
@@ -100,34 +92,19 @@
                 font-size: 17px;
             }
 
-        }
-
-        @media (max-width: 768px) {
-
-            .div-folhetos-1,
-            .div-folhetos-2,
-            .div-folhetos-3,
-            .div-folhetos-4,
-            .div-folhetos-5,
-            .div-folhetos-6 {
+            .div-folhetos {
                 width: 95%;
                 padding: 10px;
-                height: 90px;
-                display: flex;
+                height: auto;
                 flex-direction: column;
-                align-items: center;
+                justify-content: center;
             }
 
-            .button-folhetos-1,
-            .button-folhetos-2,
-            .button-folhetos-3,
-            .button-folhetos-4,
-            .button-folhetos-5,
-            .button-folhetos-6 {
+            .button-folhetos {
                 height: 40px;
                 width: 100px;
                 font-size: 1em;
-                margin: 0 auto;
+                margin: 10px 0 0 0;
             }
         }
     </style>
@@ -140,33 +117,48 @@
     </div><br>
     <div>
         <h1>Folhetos</h1>
-    </div>
-    <br><br>
-    <div class="div-folhetos-1">
-        <h1 class="text-folhetos-1">04-mai-2025</h1>
-        <a href="folhetos/04-mai-2025.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-1">Baixar </button></a>
-    </div>
-    <div class="div-folhetos-2">
-        <h1 class="text-folhetos-2">11-mai-2025</h1>
-        <a href="folhetos/11-mai-2025.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-2">Baixar </button></a>
-    </div>
-    <div class="div-folhetos-3">
-        <h1 class="text-folhetos-3">18-mai-2025</h1>
-        <a href="folhetos/18-mai-2025.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-3">Baixar </button></a>
-    </div>
-    <div class="div-folhetos-4">
-        <h1 class="text-folhetos-4">24-mai-2025</h1>
-        <a href="folhetos/24-maio-2025.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-4">Baixar </button></a>
-    </div>
-    <div class="div-folhetos-5">
-        <h1 class="text-folhetos-5">25-mai-2025</h1>
-        <a href="folhetos/25-mai-2025.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-5">Baixar </button></a>
+    </div><br>
+    <div class="folhetos-container">
+        <div class="div-folhetos">
+            <h1 class="text-folhetos">08-Jun-25</h1>
+            <a href="folhetos/08-jun-25.pdf" target="_blank">
+                <button class="button-folhetos">
+                    Baixar
+                </button>
+            </a>
+        </div>
+        <div class="div-folhetos">
+            <h1 class="text-folhetos">15-Jun-25</h1>
+            <a href="folhetos/15-jun-25.pdf" target="_blank">
+                <button class="button-folhetos">
+                    Baixar
+                </button>
+            </a>
+        </div>
+        <div class="div-folhetos">
+            <h1 class="text-folhetos">19-Jun-25</h1>
+            <a href="folhetos/19-jun-25.pdf" target="_blank">
+                <button class="button-folhetos">
+                    Baixar
+                </button>
+            </a>
+        </div>
+        <div class="div-folhetos">
+            <h1 class="text-folhetos">22-Jun-25</h1>
+            <a href="folhetos/22-jun-25.pdf" target="_blank">
+                <button class="button-folhetos">
+                    Baixar
+                </button>
+            </a>
+        </div>
+        <div class="div-folhetos">
+            <h1 class="text-folhetos">29-Jun-25</h1>
+            <a href="folhetos/29-jun-25.pdf" target="_blank">
+                <button class="button-folhetos">
+                    Baixar
+                </button>
+            </a>
+        </div>
     </div>
 </body>
-
 </html>
